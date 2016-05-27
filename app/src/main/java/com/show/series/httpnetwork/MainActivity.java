@@ -7,32 +7,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import okhttp3.Call;
-import okhttp3.MediaType;
 import okhttp3.Request;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG= "MainActivity";
+    private static final String TAG = "MainActivity";
 
-    private TextView mTv;
-    private ProgressBar mProgressBar;
+    @BindView(R.id.id_textview)
+    TextView mTv;
+    @BindView(R.id.id_progress)
+    ProgressBar mProgressBar;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    @BindView(R.id.fab)
+    FloatingActionButton fab;
 
-
-    public class MyStringCallback extends StringCallback{
+    public class MyStringCallback extends StringCallback {
 
         @Override
         public void onBefore(Request request) {
@@ -49,19 +50,19 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onError(Call call, Exception e) {
             e.printStackTrace();
-            mTv.setText("onError:"+e.getMessage());
+            mTv.setText("onError:" + e.getMessage());
         }
 
         @Override
         public void onResponse(String response) {
-            Log.e(TAG,"onResponse complete"+response);
+            Log.e(TAG, "onResponse complete" + response);
             mTv.setText(response);
         }
 
         @Override
         public void inProgress(float progress) {
             Log.e(TAG, "inProgress:" + progress);
-            mProgressBar.setProgress((int) (100*progress));
+            mProgressBar.setProgress((int) (100 * progress));
         }
     }
 
@@ -70,25 +71,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        ButterKnife.bind(MainActivity.this);
+
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "hello, snackbar", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
-
-        init();
-
-    }
-
-    private void init() {
-        mTv = (TextView) findViewById(R.id.id_textview);
-        mProgressBar = (ProgressBar) findViewById(R.id.id_progress);
     }
 
 
@@ -102,10 +96,10 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 
-    public void postHtml(View view){
-        Map<String,String> params = new HashMap<>();
-        params.put("pid","88");
-        params.put("token",UrlContants.tokenTest);
+    public void postHtml(View view) {
+        Map<String, String> params = new HashMap<>();
+        params.put("pid", "88");
+        params.put("token", UrlContants.tokenTest);
 
         OkHttpUtils.post().url(UrlContants.URL_INVITE_FRIEND).params(params)
                 .build().execute(new MyStringCallback());
