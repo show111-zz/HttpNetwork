@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar mProgressBar;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.fab)
-    FloatingActionButton fab;
+
 
     public class MyStringCallback extends StringCallback {
 
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(MainActivity.this);
 
         setSupportActionBar(toolbar);
-
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
