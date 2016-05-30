@@ -1,5 +1,6 @@
-package com.show.series.httpnetwork;
+package com.show.series.httpnetwork.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,9 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.view.UrlContants;
+import com.show.series.httpnetwork.utils.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.HashMap;
@@ -102,7 +106,13 @@ public class MainActivity extends AppCompatActivity {
 
         OkHttpUtils.post().url(UrlContants.URL_INVITE_FRIEND).params(params)
                 .build().execute(new MyStringCallback());
-
     }
+
+
+    public void jumpTo(View view){
+        Intent intent = new Intent(this,LoadMoreActivity.class);
+        startActivity(intent);
+    }
+
 
 }

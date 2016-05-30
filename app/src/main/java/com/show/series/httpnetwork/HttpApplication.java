@@ -2,9 +2,9 @@ package com.show.series.httpnetwork;
 
 import android.app.Application;
 
-import java.util.concurrent.TimeUnit;
+import com.show.series.httpnetwork.utils.OkHttpUtils;
 
-import butterknife.ButterKnife;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by lihf on 16/5/25.

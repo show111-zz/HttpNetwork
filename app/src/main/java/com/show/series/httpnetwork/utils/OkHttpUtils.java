@@ -1,4 +1,4 @@
-package com.show.series.httpnetwork;
+package com.show.series.httpnetwork.utils;
 
 import android.os.Handler;
 import android.os.Looper;
