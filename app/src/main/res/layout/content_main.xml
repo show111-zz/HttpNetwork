@@ -35,6 +35,14 @@
         android:onClick="jumpTo"
         android:layout_toRightOf="@id/get_btn"/>
 
+    <Button
+        android:id="@+id/tag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAG"
+        android:onClick="jumpTag"
+        android:layout_toRightOf="@id/jump_btn"/>
+
 
     <ProgressBar
         android:id="@+id/id_progress"

@@ -115,4 +115,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void jumpTag(View view){
+        startActivity(new Intent(this,EventTagActivity.class));
+    }
+
+
 }
