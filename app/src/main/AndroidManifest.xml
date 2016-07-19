@@ -3,6 +3,9 @@
     package="com.show.series.httpnetwork">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -24,6 +27,9 @@
 
         <activity android:name=".activity.LoadMoreActivity"
             android:label="@string/load_more"/>
+
+        <activity android:name=".activity.ScreenshotShareActivity"/>
+        <activity android:name=".activity.CustomActivity"/>
 
     </application>
 

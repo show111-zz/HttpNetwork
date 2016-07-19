@@ -115,9 +115,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void jumpTag(View view){
-        startActivity(new Intent(this,EventTagActivity.class));
+     public void createCustom(View view){
+         startActivity(new Intent(this,CustomActivity.class));
+     }
+
+
+    public void screenShare(View view){
+        startActivity(new Intent(this,ScreenshotShareActivity.class));
     }
+
+
+
 
 
 }

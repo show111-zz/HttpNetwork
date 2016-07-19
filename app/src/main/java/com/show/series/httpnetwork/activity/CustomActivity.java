@@ -6,15 +6,18 @@ import android.os.Bundle;
 import com.show.series.httpnetwork.R;
 
 /**
- * Created by lihf on 16/5/31.
+ * 自定义VIEW
+ * Created by lihf on 16/6/6.
  */
-public class EventTagActivity extends Activity{
+public class CustomActivity extends Activity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.load_more);
+        setContentView(R.layout.activity_custom_add);
     }
+
 
 
 

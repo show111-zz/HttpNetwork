@@ -39,9 +39,18 @@
         android:id="@+id/tag_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TAG"
-        android:onClick="jumpTag"
+        android:text="CUSTOM_VIEW"
+        android:onClick="createCustom"
         android:layout_toRightOf="@id/jump_btn"/>
+
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:layout_below="@id/get_btn"
+        android:layout_toRightOf="@id/post_btn"
+        android:onClick="screenShare"/>
 
 
     <ProgressBar
