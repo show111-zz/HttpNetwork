@@ -52,6 +52,15 @@
         android:layout_toRightOf="@id/post_btn"
         android:onClick="screenShare"/>
 
+    <Button
+        android:id="@+id/sqlite_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQLITE"
+        android:layout_below="@id/get_btn"
+        android:layout_toRightOf="@id/share_btn"
+        android:onClick="operateSqlite"/>
+
 
     <ProgressBar
         android:id="@+id/id_progress"

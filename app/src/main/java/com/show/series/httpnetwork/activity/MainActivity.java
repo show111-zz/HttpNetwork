@@ -12,6 +12,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
+import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
 import com.show.series.httpnetwork.view.UrlContants;
 import com.show.series.httpnetwork.utils.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -125,6 +127,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+//    public void operateSqlite(View view){
+//        startActivity(new Intent(this,SqliteOperateActivity.class));
+//    }
+
+
+    public void operateSqlite(View view){
+        startActivity(new Intent(this,FirstSqliteActivity.class));
+    }
 
 
 

@@ -30,6 +30,10 @@
 
         <activity android:name=".activity.ScreenshotShareActivity"/>
         <activity android:name=".activity.CustomActivity"/>
+        <activity android:name=".activity.data.SqliteOperateActivity"/>
+        <activity android:name=".activity.data.DisplayContact"/>
+
+        <activity android:name=".activity.first.FirstSqliteActivity"/>
 
     </application>
 
