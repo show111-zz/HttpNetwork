@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.activity.async.AsncyTaskTestActivity;
 import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
 import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
 import com.show.series.httpnetwork.view.UrlContants;
@@ -135,6 +136,13 @@ public class MainActivity extends AppCompatActivity {
     public void operateSqlite(View view){
         startActivity(new Intent(this,FirstSqliteActivity.class));
     }
+
+
+
+    public void operateAsyncTask(View view){
+        startActivity(new Intent(this,AsncyTaskTestActivity.class));
+    }
+
 
 
 
