@@ -36,6 +36,8 @@
         <activity android:name=".activity.first.FirstSqliteActivity"/>
         <activity android:name=".activity.async.AsncyTaskTestActivity"/>
 
+        <activity android:name=".activity.bus.TestEventBusActivity"/>
+
     </application>
 
 </manifest>

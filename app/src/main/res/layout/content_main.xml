@@ -70,6 +70,15 @@
         android:layout_below="@id/post_btn"
         android:onClick="operateAsyncTask"/>
 
+    <Button
+        android:id="@+id/bus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EventBus"
+        android:layout_below="@id/post_btn"
+        android:layout_toRightOf="@id/async_btn"
+        android:onClick="operateEventBus"/>
+
 
     <ProgressBar
         android:id="@+id/id_progress"
