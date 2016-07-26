@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
 import com.show.series.httpnetwork.activity.async.AsncyTaskTestActivity;
+import com.show.series.httpnetwork.activity.bus.EventBusComplexActivity;
 import com.show.series.httpnetwork.activity.bus.TestEventBusActivity;
 import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
 import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
@@ -150,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,TestEventBusActivity.class));
     }
 
+    public void operateComplexEventBus(View view){
+        startActivity(new Intent(this,EventBusComplexActivity.class));
+    }
 
 
 }

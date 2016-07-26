@@ -79,6 +79,15 @@
         android:layout_toRightOf="@id/async_btn"
         android:onClick="operateEventBus"/>
 
+    <Button
+        android:id="@+id/event_bus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EventComplex"
+        android:layout_below="@id/post_btn"
+        android:layout_toRightOf="@id/bus_btn"
+        android:onClick="operateComplexEventBus"/>
+
 
     <ProgressBar
         android:id="@+id/id_progress"

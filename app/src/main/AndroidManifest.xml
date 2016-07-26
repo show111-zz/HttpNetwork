@@ -37,6 +37,7 @@
         <activity android:name=".activity.async.AsncyTaskTestActivity"/>
 
         <activity android:name=".activity.bus.TestEventBusActivity"/>
+        <activity android:name=".activity.bus.EventBusComplexActivity"/>
 
     </application>
 
