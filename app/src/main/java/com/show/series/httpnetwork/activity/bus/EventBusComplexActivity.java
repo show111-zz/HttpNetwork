@@ -16,7 +16,4 @@ public class EventBusComplexActivity extends FragmentActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complex_event_bus);
     }
-
-
-
 }

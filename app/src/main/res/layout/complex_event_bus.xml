@@ -22,7 +22,4 @@
         android:layout_weight="1"
         android:name="com.show.series.httpnetwork.activity.bus.ItemDetailFragment"/>
 
-
-
-
 </LinearLayout>

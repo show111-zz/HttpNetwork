@@ -20,7 +20,6 @@ import org.greenrobot.eventbus.ThreadMode;
  */
 public class ItemListFragment extends ListFragment {
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

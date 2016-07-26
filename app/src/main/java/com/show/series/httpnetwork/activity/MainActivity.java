@@ -129,12 +129,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,ScreenshotShareActivity.class));
     }
 
-
-//    public void operateSqlite(View view){
-//        startActivity(new Intent(this,SqliteOperateActivity.class));
-//    }
-
-
     public void operateSqlite(View view){
         startActivity(new Intent(this,FirstSqliteActivity.class));
     }
