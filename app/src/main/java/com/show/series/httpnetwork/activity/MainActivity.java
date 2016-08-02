@@ -17,6 +17,7 @@ import com.show.series.httpnetwork.activity.bus.EventBusComplexActivity;
 import com.show.series.httpnetwork.activity.bus.TestEventBusActivity;
 import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
 import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
+import com.show.series.httpnetwork.activity.singleton.TestSingletonActivity;
 import com.show.series.httpnetwork.view.UrlContants;
 import com.show.series.httpnetwork.utils.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -148,6 +149,11 @@ public class MainActivity extends AppCompatActivity {
     public void operateComplexEventBus(View view){
         startActivity(new Intent(this,EventBusComplexActivity.class));
     }
+
+    public void operateSingleton(View view){
+        startActivity(new Intent(this,TestSingletonActivity.class));
+    }
+
 
 
 }

@@ -38,6 +38,7 @@
 
         <activity android:name=".activity.bus.TestEventBusActivity"/>
         <activity android:name=".activity.bus.EventBusComplexActivity"/>
+        <activity android:name=".activity.singleton.TestSingletonActivity"/>
 
     </application>
 
