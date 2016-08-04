@@ -6,7 +6,7 @@ import android.app.Activity;
  * 测试单例模式(饿汉式)
  * Created by lihf on 16/8/1.
  */
-public class TestSingletonActivity extends Activity{
+public class TestSingletonActivity{
 
     /**
      *  饿汉式单例类，在类初始化时，已经自行实现实例化

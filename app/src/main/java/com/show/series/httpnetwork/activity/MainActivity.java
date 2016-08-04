@@ -17,6 +17,7 @@ import com.show.series.httpnetwork.activity.bus.EventBusComplexActivity;
 import com.show.series.httpnetwork.activity.bus.TestEventBusActivity;
 import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
 import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
+import com.show.series.httpnetwork.activity.receiver.TestBroadcastActivity;
 import com.show.series.httpnetwork.activity.singleton.TestSingletonActivity;
 import com.show.series.httpnetwork.view.UrlContants;
 import com.show.series.httpnetwork.utils.OkHttpUtils;
@@ -152,6 +153,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void operateSingleton(View view){
         startActivity(new Intent(this,TestSingletonActivity.class));
+    }
+
+
+    public void operateBroadcast(View view){
+        startActivity(new Intent(this,TestBroadcastActivity.class));
     }
 
 

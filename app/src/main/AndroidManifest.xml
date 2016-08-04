@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.show.series.httpnetwork">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 
@@ -25,20 +25,29 @@
         </activity>
 
 
-        <activity android:name=".activity.LoadMoreActivity"
-            android:label="@string/load_more"/>
+        <activity
+            android:name=".activity.LoadMoreActivity"
+            android:label="@string/load_more" />
 
-        <activity android:name=".activity.ScreenshotShareActivity"/>
-        <activity android:name=".activity.CustomActivity"/>
-        <activity android:name=".activity.data.SqliteOperateActivity"/>
-        <activity android:name=".activity.data.DisplayContact"/>
+        <activity android:name=".activity.ScreenshotShareActivity" />
+        <activity android:name=".activity.CustomActivity" />
+        <activity android:name=".activity.data.SqliteOperateActivity" />
+        <activity android:name=".activity.data.DisplayContact" />
 
-        <activity android:name=".activity.first.FirstSqliteActivity"/>
-        <activity android:name=".activity.async.AsncyTaskTestActivity"/>
+        <activity android:name=".activity.first.FirstSqliteActivity" />
+        <activity android:name=".activity.async.AsncyTaskTestActivity" />
 
-        <activity android:name=".activity.bus.TestEventBusActivity"/>
-        <activity android:name=".activity.bus.EventBusComplexActivity"/>
-        <activity android:name=".activity.singleton.TestSingletonActivity"/>
+        <activity android:name=".activity.bus.TestEventBusActivity" />
+        <activity android:name=".activity.bus.EventBusComplexActivity" />
+
+        <activity android:name=".activity.receiver.TestBroadcastActivity" />
+
+
+        <receiver android:name=".activity.receiver.MyIntentReceiver">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="com.send.ACTION_SEND"/>
+            </intent-filter>
+        </receiver>
 
     </application>
 
