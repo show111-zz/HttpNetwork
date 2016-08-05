@@ -12,7 +12,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.activity.Custom.TextApartActivity;
 import com.show.series.httpnetwork.activity.async.AsncyTaskTestActivity;
+import com.show.series.httpnetwork.activity.async.TestHandleActivity;
 import com.show.series.httpnetwork.activity.bus.EventBusComplexActivity;
 import com.show.series.httpnetwork.activity.bus.TestEventBusActivity;
 import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
@@ -116,48 +118,55 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void jumpTo(View view){
-        Intent intent = new Intent(this,LoadMoreActivity.class);
+    public void jumpTo(View view) {
+        Intent intent = new Intent(this, LoadMoreActivity.class);
         startActivity(intent);
     }
 
 
-     public void createCustom(View view){
-         startActivity(new Intent(this,CustomActivity.class));
-     }
-
-
-    public void screenShare(View view){
-        startActivity(new Intent(this,ScreenshotShareActivity.class));
-    }
-
-    public void operateSqlite(View view){
-        startActivity(new Intent(this,FirstSqliteActivity.class));
+    public void createCustom(View view) {
+        startActivity(new Intent(this, CustomActivity.class));
     }
 
 
+    public void screenShare(View view) {
+        startActivity(new Intent(this, ScreenshotShareActivity.class));
+    }
 
-    public void operateAsyncTask(View view){
-        startActivity(new Intent(this,AsncyTaskTestActivity.class));
+    public void operateSqlite(View view) {
+        startActivity(new Intent(this, FirstSqliteActivity.class));
     }
 
 
-
-    public void operateEventBus(View view){
-        startActivity(new Intent(this,TestEventBusActivity.class));
-    }
-
-    public void operateComplexEventBus(View view){
-        startActivity(new Intent(this,EventBusComplexActivity.class));
-    }
-
-    public void operateSingleton(View view){
-        startActivity(new Intent(this,TestSingletonActivity.class));
+    public void operateAsyncTask(View view) {
+        startActivity(new Intent(this, AsncyTaskTestActivity.class));
     }
 
 
-    public void operateBroadcast(View view){
-        startActivity(new Intent(this,TestBroadcastActivity.class));
+    public void operateEventBus(View view) {
+        startActivity(new Intent(this, TestEventBusActivity.class));
+    }
+
+    public void operateComplexEventBus(View view) {
+        startActivity(new Intent(this, EventBusComplexActivity.class));
+    }
+
+    public void operateSingleton(View view) {
+        startActivity(new Intent(this, TestSingletonActivity.class));
+    }
+
+
+    public void operateBroadcast(View view) {
+        startActivity(new Intent(this, TestBroadcastActivity.class));
+    }
+
+
+    public void operateHandlerProcess(View view) {
+        startActivity(new Intent(this, TestHandleActivity.class));
+    }
+
+    public void jumpToAnother(View view) {
+        startActivity(new Intent(this, TextApartActivity.class));
     }
 
 

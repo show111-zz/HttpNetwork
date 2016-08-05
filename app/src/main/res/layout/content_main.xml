@@ -106,13 +106,30 @@
         android:layout_toRightOf="@id/single_btn"
         android:onClick="operateBroadcast"/>
 
+    <Button
+        android:id="@+id/handler_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handler"
+        android:layout_below="@id/async_btn"
+        android:layout_toRightOf="@id/basic_btn"
+        android:onClick="operateHandlerProcess"/>
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="other"
+        android:layout_below="@id/single_btn"
+        android:onClick="jumpToAnother"/>
+
 
     <ProgressBar
         android:id="@+id/id_progress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/single_btn"/>
+        android:layout_below="@id/other"/>
 
     <TextView
         android:id="@+id/id_textview"
