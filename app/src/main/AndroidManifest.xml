@@ -26,6 +26,7 @@
 
         <activity android:name=".activity.MainActivity"  android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity android:name=".activity.fragment.PrimaryActivity"/>
 
         <activity
             android:name=".activity.LoadMoreActivity"

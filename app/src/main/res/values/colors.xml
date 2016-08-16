@@ -11,4 +11,9 @@
 
     <color name="bg_color_red">#f98a96</color>
     <color name="bg_color_transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="tab_selected_color">#ff6330</color>
+    <color name="tab_unselect_color">#212121</color>
+    <color name="bg_color_black_transparent">#40000000</color>
 </resources>
