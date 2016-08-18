@@ -5,15 +5,95 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="divider_color_grey">#efeff4</color>
-    <color name="organization_content">#808080</color>
-    <color name="text_color_light">#a8a8a8</color>
-    <color name="organization_name">#1c1c1c</color>
 
-    <color name="bg_color_red">#f98a96</color>
-    <color name="bg_color_transparent">#00000000</color>
+    <color name="color_orange">#ff6330</color>
+
+    <color name="tab_selected_color">@color/color_orange</color>
+    <color name="tab_unselect_color">#212121</color>
+    <color name="text_city_empty">#a6a6a6</color>
+    <color name="text_city_label">#f7f7f7</color>
+    <color name="title_color_orange">@color/color_orange</color>
+    <color name="title_color_black">#000000</color>
+    <color name="text_lable_bold">#010101</color>
+    <color name="action_menu_text_color">#F2F2F2</color>
 
     <color name="white">#ffffff</color>
-    <color name="tab_selected_color">#ff6330</color>
-    <color name="tab_unselect_color">#212121</color>
+    <color name="white_blur">#bfbdbc</color>
+    <color name="evaluate_text">#f98a96</color>
+
+    <color name="title_color">#363636</color>
+
+    <color name="default_background_color">#f6f6f6</color>
+    <color name="default_divider_color">#D9DADB</color>
+
+    <color name="app_blue">#69C2D7</color>
+    <color name="app_pink">#F793A2</color>
+
+    <color name="image_unload">#f6f6f6</color>
+    <color name="city_line">#c2c2c2</color>
+    <color name="city_divide_line">#c8c8c8</color>
+
+    <color name="tv_activity">#DB7093</color>
+    <color name="tv_location">#fc5b1c</color>
+
+    <color name="tv_fundraise">#EE4000</color>
+    <color name="line_item_label_more">#BEBEBE</color>
+    <color name="line_organization">#e8e8e8</color>
+    <color name="organization_name">#1c1c1c</color>
+    <color name="weixin_name">#666666</color>
+    <color name="organization_content">#808080</color>
+    <color name="event_normal">#282828</color>
+    <color name="event_normal_main">#4e4e4e</color>
+
+    <color name="bg_weixin">#45be33</color>
+    <color name="bg_zhifubao">#00abee</color>
+
+    <color name="base_color_orange">#FE6829</color>
+    <color name="base_color_pink">#FFC0CB</color>
+    <color name="orange">#ff6f42</color>
+
+    <color name="project_divider_color">#e9e9e9</color>
+
+    <color name="font_light_color">#808080</color>
+    <color name="default_img_bg_color">#DCDCDC</color>
+
+
+    <!--cici start-->
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_red">#ff6330</color>
+    <color name="text_color_red1">#fa909d</color>
+    <color name="text_color_red2">#fa8997</color>
+    <color name="text_color_blue">#69c2d7</color>
+    <color name="text_color_grey">#a9a9a9</color>
+    <color name="text_color_green">#4fc98e</color>
+    <color name="text_color_hint">#a3a3a3</color>
+
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_black_dark">#4e4e4e</color>
+    <color name="text_color_black_light">#7a7a7a</color>
+    <color name="text_color_light">#a8a8a8</color>
+
+
+    <color name="divider_color_white">#91d2e1</color>
+    <color name="indicator_color_red">#fe642f</color>
+
+    <color name="app_bg_color_white">#f1f1f1</color>
+    <color name="title_bg_color_orange">#fe642f</color>
+    <color name="bg_color_blue">#69c2d7</color>
+    <color name="bg_color_red">#f98a96</color>
+    <color name="bg_color_green">#51c84b</color>
+    <color name="bg_color_orange">#e66b4f</color>
+    <color name="bg_color_home_bg">#752d2d2d</color>
     <color name="bg_color_black_transparent">#40000000</color>
+    <color name="bg_color_white_transparent">#40ffffff</color>
+    <color name="bg_color_transparent">#00000000</color>
+
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!--cici end-->
+
+
+
 </resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/msg_view"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.flyco.roundview.RoundRelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            app:rv_backgroundColor="#655989"
+            app:rv_cornerRadius_BR="10dp"
+            app:rv_cornerRadius_TR="10dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/org_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:roundedCornerRadius="10dp"
+                app:roundTopLeft="false"
+                app:roundBottomLeft="false"
+                app:actualImageScaleType="focusCrop"
+                app:failureImage="@mipmap/icon_default_org"
+                app:placeholderImage="@mipmap/icon_default_org"
+                app:placeholderImageScaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/icon_msg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:background="#752d2d2d">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/project_divider_color" />
+
+                <TextView
+                    android:id="@+id/org_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="中华社会救助基金会"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/project_divider_color" />
+
+                <TextView
+                    android:id="@+id/org_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:minLines="3"
+                    android:maxLines="4"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/msg_look"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@mipmap/msg_btn_icon_white"
+                    android:drawablePadding="2dp"
+                    android:gravity="right"
+                    android:text="ssss"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="11sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/project_divider_color" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/org_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"
+                app:failureImage="@mipmap/icon_default_org"
+                app:placeholderImage="@mipmap/icon_default_org"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundAsCircle="true"/>
+        </com.flyco.roundview.RoundRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/view_more_project"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                app:rv_backgroundColor="@color/bg_color_blue"
+                app:rv_cornerRadius_TL="10dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/project_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:drawableRight="@mipmap/icon_double_arrow"
+                    android:text="更多"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/project_more"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="项目"/>
+            </com.flyco.roundview.RoundRelativeLayout>
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/view_more_event"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                app:rv_backgroundColor="@color/bg_color_red"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/event_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:drawableRight="@mipmap/icon_double_arrow"
+                    android:text="更多"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_more"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="活动"/>
+
+            </com.flyco.roundview.RoundRelativeLayout>
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/view_more_sale"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                app:rv_backgroundColor="#F1CA86"
+                app:rv_cornerRadius_BL="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sale_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:drawableRight="@mipmap/icon_double_arrow"
+                    android:text="更多"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sale_more"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="答谢"/>
+
+            </com.flyco.roundview.RoundRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

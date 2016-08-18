@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color_white">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/userIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                app:failureImage="@mipmap/default_user_icon"
+                app:placeholderImage="@mipmap/default_user_icon"
+                app:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/my_price_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:text="sss"
+                            android:id="@+id/tv_paytotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/icon_money_blank"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/tv_paytotal"
+                            android:text="捐助"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:background="@color/project_divider_color" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/my_project_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:text="ss"
+                            android:id="@+id/tv_project_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="14dp"
+                            android:textColor="@color/color_orange"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/icon_support_blank"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/tv_project_count"
+                            android:gravity="center_vertical"
+                            android:text="项目"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/fragment_home_message"/>
+
+        <LinearLayout
+            android:id="@+id/ll_advert"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ad_image1"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:backgroundImage="@color/default_background_color"
+                app:failureImage="@mipmap/default_three_scale"
+                app:placeholderImage="@mipmap/default_three_scale"/>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/ad_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    app:backgroundImage="@color/default_background_color"
+                    app:failureImage="@mipmap/default_720_scale"
+                    app:placeholderImage="@mipmap/default_720_scale"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/ad_image3"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        app:backgroundImage="@color/default_background_color"
+                        app:failureImage="@mipmap/default_16_scale"
+                        app:placeholderImage="@mipmap/default_16_scale"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/ad_image4"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        app:backgroundImage="@color/default_background_color"
+                        app:failureImage="@mipmap/default_16_scale"
+                        app:placeholderImage="@mipmap/default_16_scale"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_view"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/project_img"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                app:placeholderImage="@mipmap/default_16_scale"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundTopLeft="false"
+                app:roundBottomLeft="false"/>
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/project_btn"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                app:rv_backgroundColor="@color/bg_color_blue"
+                app:rv_cornerRadius_BL="10dp"
+                app:rv_cornerRadius_TL="10dp">
+                <TextView
+                    android:id="@+id/project_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="我的项目"/>
+                <View
+                    android:id="@+id/line"
+                    android:layout_below="@+id/project_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:id="@+id/project_txt"
+                    android:layout_below="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="@string/my_project_no_text"/>
+                <TextView
+                    android:id="@+id/tv_look_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_color_blue"
+                    android:background="@drawable/shape_btn_white"
+                    android:text="查看"/>
+            </com.flyco.roundview.RoundRelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_event_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/event_btn"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                app:rv_backgroundColor="@color/bg_color_red"
+                app:rv_cornerRadius_BR="10dp"
+                app:rv_cornerRadius_TR="10dp" >
+
+                <TextView
+                    android:id="@+id/event_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="我的活动"/>
+                <View
+                    android:id="@+id/line1"
+                    android:layout_below="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:id="@+id/tv_my_event"
+                    android:layout_below="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="亲历公益现场，享受助人的快乐。"/>
+                <TextView
+                    android:id="@+id/tv_look_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="10sp"
+                    android:textColor="@color/bg_color_red"
+                    android:background="@drawable/shape_btn_white"
+                    android:text="查看"/>
+
+            </com.flyco.roundview.RoundRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_event_img"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/event_img1"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:roundedCornerRadius="10dp"
+                    app:placeholderImage="@mipmap/default_three_scale"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:roundTopRight="false"
+                    app:roundBottomRight="false" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/event_img2"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:backgroundImage="@color/default_background_color"
+                    app:failureImage="@mipmap/default_three_scale"
+                    app:placeholderImage="@mipmap/default_three_scale" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/donate_view"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/donate_img"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="5"
+                app:roundedCornerRadius="10dp"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundTopLeft="false"
+                app:roundBottomLeft="false"/>
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/donate_btn"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                app:rv_backgroundColor="@color/bg_color_red"
+                app:rv_cornerRadius_BL="10dp"
+                app:rv_cornerRadius_TL="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/donate_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_color_white"
+                        android:text="现场捐"/>
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"/>
+                    <TextView
+                        android:id="@+id/donate_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/text_color_white"
+                        android:text="还没有支持过公益项目，支持公益项目，开启公益梦想！"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@color/text_color_blue"
+                        android:background="@drawable/shape_btn_white"
+                        android:text="查看"/>
+                </LinearLayout>
+
+            </com.flyco.roundview.RoundRelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/donate_together_view"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundRelativeLayout
+                android:id="@+id/donate_together_btn"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                app:rv_backgroundColor="@color/bg_color_blue"
+                app:rv_cornerRadius_BR="10dp"
+                app:rv_cornerRadius_TR="10dp" >
+                <TextView
+                    android:id="@+id/donate_together_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="一起捐"/>
+                <View
+                    android:id="@+id/line2"
+                    android:layout_below="@+id/donate_together_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:id="@+id/tv_together_donate"
+                    android:layout_below="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_color_white"
+                    android:text="邀请小伙伴一起支持公益项目，成为公益达人。"/>
+                <TextView
+                    android:id="@+id/tv_look_together"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="10sp"
+                    android:textColor="@color/text_color_blue"
+                    android:background="@drawable/shape_btn_white"
+                    android:text="查看"/>
+            </com.flyco.roundview.RoundRelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/donate_together_img"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                app:roundedCornerRadius="10dp"
+                app:placeholderImage="@mipmap/default_16_scale"
+                app:placeholderImageScaleType="centerCrop"
+                app:roundTopRight="false"
+                app:roundBottomRight="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
