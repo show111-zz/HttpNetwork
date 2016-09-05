@@ -43,4 +43,17 @@
         <item name="@android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
 
+    <style name="MyBox">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme" >
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+        <item name="colorAccent">@color/myColorAccent</item>
+    </style>
+
+
 </resources>

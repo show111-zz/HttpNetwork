@@ -1,4 +1,4 @@
-package com.show.series.httpnetwork.activity;
+package com.show.series.httpnetwork.activity.act;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

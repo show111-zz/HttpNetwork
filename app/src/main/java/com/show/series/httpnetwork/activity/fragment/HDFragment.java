@@ -2,7 +2,6 @@ package com.show.series.httpnetwork.activity.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
-import com.show.series.httpnetwork.activity.MyDonateActivity;
+import com.show.series.httpnetwork.activity.act.MyDonateActivity;
 import com.show.series.httpnetwork.model.HomeModel;
-
-import butterknife.BindView;
-import butterknife.OnClick;
 
 /**
  * Created by lihf on 16/8/17.

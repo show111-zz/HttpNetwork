@@ -1,11 +1,11 @@
-package com.show.series.httpnetwork.activity;
+package com.show.series.httpnetwork.activity.act;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.activity.AndroidShare;
 import com.show.series.httpnetwork.utils.FileUtils;
 import com.show.series.httpnetwork.utils.ScreenShotUtil;
 import com.show.series.httpnetwork.view.ScreenShot1;

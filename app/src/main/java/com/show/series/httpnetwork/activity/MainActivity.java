@@ -12,12 +12,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.show.series.httpnetwork.R;
-import com.show.series.httpnetwork.activity.Custom.TextApartActivity;
+import com.show.series.httpnetwork.activity.act.CustomActivity;
+import com.show.series.httpnetwork.activity.act.LoadMoreActivity;
+import com.show.series.httpnetwork.activity.act.ScreenshotShareActivity;
+import com.show.series.httpnetwork.activity.act.SubMainClassActivity;
 import com.show.series.httpnetwork.activity.async.AsncyTaskTestActivity;
 import com.show.series.httpnetwork.activity.async.TestHandleActivity;
 import com.show.series.httpnetwork.activity.bus.EventBusComplexActivity;
 import com.show.series.httpnetwork.activity.bus.TestEventBusActivity;
-import com.show.series.httpnetwork.activity.data.SqliteOperateActivity;
 import com.show.series.httpnetwork.activity.first.FirstSqliteActivity;
 import com.show.series.httpnetwork.activity.receiver.TestBroadcastActivity;
 import com.show.series.httpnetwork.activity.singleton.TestSingletonActivity;
@@ -165,10 +167,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, TestHandleActivity.class));
     }
 
-    public void jumpToAnother(View view) {
-        startActivity(new Intent(this, TextApartActivity.class));
-    }
 
+    public void jumpToAnother(View view) {
+        startActivity(new Intent(this, SubMainClassActivity.class));
+    }
 
 
 }

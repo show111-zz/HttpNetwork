@@ -12,7 +12,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/MyTheme">
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
@@ -24,16 +24,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.GuideActivity"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.act.GuideActivity"  android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity android:name=".activity.fragment.PrimaryActivity"/>
 
         <activity
-            android:name=".activity.LoadMoreActivity"
+            android:name=".activity.act.LoadMoreActivity"
             android:label="@string/load_more" />
 
-        <activity android:name=".activity.ScreenshotShareActivity" />
-        <activity android:name=".activity.CustomActivity" />
+        <activity android:name=".activity.act.ScreenshotShareActivity" />
+        <activity android:name=".activity.act.CustomActivity" />
         <activity android:name=".activity.data.SqliteOperateActivity" />
         <activity android:name=".activity.data.DisplayContact" />
 
@@ -48,7 +48,10 @@
         <activity android:name=".activity.async.TestHandleActivity"/>
         <activity android:name=".activity.Custom.TextApartActivity"/>
 
-        <activity android:name=".activity.MyDonateActivity"/>
+        <activity android:name=".activity.act.MyDonateActivity"/>
+
+        <activity android:name=".activity.act.SubMainClassActivity"/>
+        <activity android:name=".activity.act.CustomThemeActivity" />
 
 
         <receiver android:name=".activity.receiver.MyIntentReceiver">
