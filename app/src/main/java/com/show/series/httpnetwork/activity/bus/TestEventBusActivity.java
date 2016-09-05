@@ -43,7 +43,7 @@ public class TestEventBusActivity extends Activity{
 
 
     //订阅者
-    @Subscribe(threadMode = ThreadMode.MAIN)
+    @Subscribe
     public void helloEventBus(String message){
         text.setText(message);
     }
@@ -60,7 +60,6 @@ public class TestEventBusActivity extends Activity{
         String json = "post json data";
         EventBus.getDefault().post(json);
     }
-
 
 
 }
