@@ -31,5 +31,14 @@ public class UrlContants {
             + "mobile/dynamic.php?mod=mob2&ctl=index&act=index&pid=111&devid=ffffffff-a301-7ba5-e498-5a5c00000000&pcode=01011000&version=2.0.0";
 
 
+    //我的捐赠-等待支付数量
+    public static final String URL_WAIT_PAY_COUNT = SERVER
+            + "mobile/dynamic.php?mod=mob2&ctl=donate&act=numfail&devid=ffffffff-a301-7ba5-e498-5a5c00000000&pcode=01011000&version=2.0.0";
+
+    //我的捐赠-捐赠成功数量
+    public static final String URL_PAY_OK_COUNT = SERVER
+            + "mobile/dynamic.php?mod=mob2&ctl=donate&act=num&devid=ffffffff-a301-7ba5-e498-5a5c00000000&pcode=01011000&version=2.0.0";
+
+
 
 }

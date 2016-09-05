@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.show.series.httpnetwork.R;
+import com.show.series.httpnetwork.activity.fragment.PrimaryActivity;
 
 import java.util.ArrayList;
 
@@ -60,7 +61,8 @@ public class GuideActivity extends Activity {
         btn_just_do.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GuideActivity.this, MainActivity.class));
+//                startActivity(new Intent(GuideActivity.this, MainActivity.class));
+                startActivity(new Intent(GuideActivity.this, PrimaryActivity.class));
                 finish();
             }
         });

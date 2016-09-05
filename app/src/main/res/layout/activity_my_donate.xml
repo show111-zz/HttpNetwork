@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +8,19 @@
     <com.show.series.httpnetwork.PagerSlidingTabStrip
         android:id="@+id/viewpager_strip"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:pstsDividerColor="@color/divider_color_grey"
+        app:pstsDividerPadding="0dp"
+        app:pstsIndicatorColor="@color/indicator_color_red"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsSelectedTabTextColor="@color/text_color_red"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="0dp"
+        app:pstsTabTextColor="@color/text_color_black_dark"
+        app:pstsTabTextSize="15sp"
+        app:pstsUnderlineColor="@color/divider_color_grey"
+        app:pstsUnderlineHeight="0.5dp"/>
 
 
     <android.support.v4.view.ViewPager
