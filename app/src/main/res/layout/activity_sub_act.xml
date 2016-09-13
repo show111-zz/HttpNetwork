@@ -23,4 +23,13 @@
         android:onClick="createCustomTheme"/>
 
 
+    <Button
+        android:id="@+id/data_bind_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_custom_theme"
+        android:text="DataBind"
+        android:onClick="OnDataBind"/>
+
+
 </RelativeLayout>

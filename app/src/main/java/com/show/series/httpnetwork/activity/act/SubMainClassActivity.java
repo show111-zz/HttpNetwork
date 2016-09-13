@@ -30,4 +30,10 @@ public class SubMainClassActivity extends Activity{
     }
 
 
+
+    public void OnDataBind(View view){
+        startActivity(new Intent(this, DataBindActivity.class));
+    }
+
+
 }

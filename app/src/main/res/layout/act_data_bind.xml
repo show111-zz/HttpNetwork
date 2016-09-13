@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="com.show.series.httpnetwork.model.User"/>
+        <import type="com.show.series.httpnetwork.utils.MyStringUtils"/>
+        <variable name="user" type="User"/>
+    </data>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{MyStringUtils.capitalize(user.firstName)}"/>
+
+
+    </LinearLayout>
+
+
+
+</layout>

@@ -54,6 +54,9 @@
         <activity android:name=".activity.act.CustomThemeActivity" />
 
 
+        <activity android:name=".activity.act.DataBindActivity"/>
+
+
         <receiver android:name=".activity.receiver.MyIntentReceiver">
             <intent-filter android:label="@string/app_name">
                 <action android:name="com.send.ACTION_SEND"/>
